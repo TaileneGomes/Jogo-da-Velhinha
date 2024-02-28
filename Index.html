@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Velha</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div id="player-turn">Vez do Jogador X</div>
+    <div class="board" id="board">
+        <div class="cell" onclick="play(this, 0, 0)"></div>
+        <div class="cell" onclick="play(this, 0, 1)"></div>
+        <div class="cell" onclick="play(this, 0, 2)"></div>
+        <div class="cell" onclick="play(this, 1, 0)"></div>
+        <div class="cell" onclick="play(this, 1, 1)"></div>
+        <div class="cell" onclick="play(this, 1, 2)"></div>
+        <div class="cell" onclick="play(this, 2, 0)"></div>
+        <div class="cell" onclick="play(this, 2, 1)"></div>
+        <div class="cell" onclick="play(this, 2, 2)"></div>
+    </div>
+    <div id="score">Placar: Jogador X - 0 | Jogador O - 0</div>
+    <button onclick="reset()">Resetar Jogo</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
