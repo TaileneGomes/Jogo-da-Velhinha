@@ -4,16 +4,16 @@ let board = [
     ['', '', ''],
     ['', '', '']
 ]; //Representa o tabuleiro
-let score = { X: 0, O: 0 };
+let score = { X: 0, O: 0 }; //Objeto para controlar o placar
 
 function play(cell, row, col) {
-    if (cell.innerText === '' && !isGameOver()) {
+    if (cell.innerText === '' && !isGameOver()) { //Verificar se a célula esta vazia e o jogo não acabou
         cell.innerText = currentPlayer;
         board[row][col] = currentPlayer;
-        if (checkWinner(currentPlayer)) {
+        if (checkWinner(currentPlayer)) { 
             score[currentPlayer]++;
             document.getElementById('score').innerText = `Placar: Jogador X - ${score.X} | Jogador O - ${score.O}`;
-            alert(`Jogador ${currentPlayer} venceu!`);
+            alert(`Jogador ${currentPlayer} venceu!`); //Alerta de vitória
             reset();
             return;
         }
