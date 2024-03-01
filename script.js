@@ -1,11 +1,11 @@
 let currentPlayer = 'X'; // Variável para controlar o jogador atual
-let board = [
+let board = [  //Representa o tabuleiro do jogo
     ['', '', ''],
     ['', '', ''],
     ['', '', '']
 ]; 
 let score = { X: 0, O: 0 }; 
-let againstComputer = false; // Variável para controlar o modo de jogo (contra o computador ou contra outro jogador)
+let againstComputer = false; // Variável para controlar o modo de jogo
 
 function play(cell, row, col) {
     if (cell.innerText === '' && !isGameOver()) { 
@@ -14,7 +14,7 @@ function play(cell, row, col) {
         if (checkWinner(currentPlayer)) { 
             score[currentPlayer]++;
             document.getElementById('score').innerText = `Placar: Jogador X - ${score.X} | Jogador O - ${score.O}`;
-            alert(`Jogador ${currentPlayer} venceu!`);
+            alert(`Jogador ${currentPlayer} venceu!`); 
             reset();
             return;
         }
@@ -33,7 +33,7 @@ function play(cell, row, col) {
     }
 }
 
-function computerPlay() {
+function computerPlay() { //Lógica para a jogada do computador
     let emptyCells = [];
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
@@ -43,6 +43,94 @@ function computerPlay() {
         }
     }
     if (emptyCells.length > 0) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         let randomIndex = Math.floor(Math.random() * emptyCells.length);
         let { row, col } = emptyCells[randomIndex];
         let cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
