@@ -8,24 +8,24 @@
 <script src="script.js"></script>
 </head>
 <body>
-        <section class="container">
-    <div id="Velha"> JOGO DA ELO! </div>
+<section class="container">
+    <div id="Velha">JOGO DA VELHINHA!</div>
     <div id="player-turn">Vez do Jogador X</div>
     <div class="board" id="board">
-        <!--células do tabuleiro, usando o evento onclick para executar a funcão quando o botão é clicado -->
-        <div class="cell" onclick="play(this, 0, 0)"></div>
-        <div class="cell" onclick="play(this, 0, 1)"></div>
-        <div class="cell" onclick="play(this, 0, 2)"></div>
-        <div class="cell" onclick="play(this, 1, 0)"></div>
-        <div class="cell" onclick="play(this, 1, 1)"></div>
-        <div class="cell" onclick="play(this, 1, 2)"></div>
-        <div class="cell" onclick="play(this, 2, 0)"></div>
-        <div class="cell" onclick="play(this, 2, 1)"></div>
-        <div class="cell" onclick="play(this, 2, 2)"></div>
+        <!--células do tabuleiro, usando o evento onclick para executar a função quando o botão é clicado -->
+        <div class="cell" data-row="0" data-col="0" onclick="play(this, 0, 0)"></div>
+        <div class="cell" data-row="0" data-col="1" onclick="play(this, 0, 1)"></div>
+        <div class="cell" data-row="0" data-col="2" onclick="play(this, 0, 2)"></div>
+        <div class="cell" data-row="1" data-col="0" onclick="play(this, 1, 0)"></div>
+        <div class="cell" data-row="1" data-col="1" onclick="play(this, 1, 1)"></div>
+        <div class="cell" data-row="1" data-col="2" onclick="play(this, 1, 2)"></div>
+        <div class="cell" data-row="2" data-col="0" onclick="play(this, 2, 0)"></div>
+        <div class="cell" data-row="2" data-col="1" onclick="play(this, 2, 1)"></div>
+        <div class="cell" data-row="2" data-col="2" onclick="play(this, 2, 2)"></div>
     </div>
     <div id="score">Placar: Jogador X - 0 | Jogador O - 0</div>
-    <button onclick="playAgainstComputer()">Jogar contra o Computador</button>
-    <button onclick="reset()">Resetar Jogo</button> <!--botão para resetar o jogo-->
+    <button onclick="togglePlayerMode()">Alternar modo de jogo</button>
+    <button onclick="reset()">Resetar Jogo</button>
 </section>
 
 </body>
