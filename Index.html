@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jogo da Velha</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
-<div class="container">
+        <section class="container">
+    <div id="Velha"> JOGO DA ELO! </div>
     <div id="player-turn">Vez do Jogador X</div>
     <div class="board" id="board">
         <!--células do tabuleiro, usando o evento onclick para executar a funcão quando o botão é clicado -->
@@ -22,8 +24,9 @@
         <div class="cell" onclick="play(this, 2, 2)"></div>
     </div>
     <div id="score">Placar: Jogador X - 0 | Jogador O - 0</div>
+    <button onclick="playAgainstComputer()">Jogar contra o Computador</button>
     <button onclick="reset()">Resetar Jogo</button> <!--botão para resetar o jogo-->
-</div>
-<script src="script.js"></script>
+</section>
+
 </body>
 </html>

@@ -1,10 +1,18 @@
 body {
+    
+    background-position: 0px;
+    background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #97bfee;
+    background-color: #b5eeb7;
     margin: 0;
     padding: 0;
 }
 
+#velha {
+    font-size: 2.2em;
+    margin-top: 20px;
+}
+    
 .container {
     display: flex;
     flex-direction: column;
@@ -22,9 +30,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+    gap: 10px;
     border: 5px solid #333;
-    background-color: #7e56db;
+    background-color: #7cc97f;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -35,24 +43,25 @@ body {
     align-items: center;
     font-size: 3em;
     cursor: pointer;
-    border: 1px solid #ccc;
+    border: 1px solid #0c0c0c;
     transition: background-color 0.3s ease;
 }
 
 .cell:hover {
-    background-color: #b61717;
+    background-color: #45a049;
 }
 
 #score {
-    font-size: 1.2em;
+    font-size: 2.2em;
     margin-top: 20px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 15px 20px;
+    margin-top: 5px;
     font-size: 1em;
-    border: none;
-    background-color: #4CAF50;
+    border-radius: 5px;
+    background-color: #7cc97f;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
